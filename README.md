@@ -1,4 +1,4 @@
-<h1 align="center" style="font-weight: bold;">Project name 💻</h1>
+<h1 align="center" style="font-weight: bold;">Forum 💻</h1>
 
 <p align="center">
  <a href="#tech">Technologies</a> • 
@@ -9,15 +9,15 @@
 </p>
 
 <p align="center">
-    <b>Simple description of what your project do or how to use it.</b>
+    <b>Criação de uma API para uso de um Fórum entre alunos e professores a partir de aulas e cursos realizados.</b>
 </p>
 
 <h2 id="technologies">💻 Technologies</h2>
 
-- list of all technologies you used
 - Java
-- MongoDB
-- NodeJS
+- SpringBoot 3
+- API REST
+- MySQL
 
 <h2 id="started">🚀 Getting started</h2>
 
@@ -61,7 +61,7 @@ npm some-command-to-run
 
 Here you can list the main routes of your API, and what are their expected request bodies.
 ​
-| route               | description                                          
+| route | description                                          
 |----------------------|-----------------------------------------------------
 | <kbd>GET /authenticate</kbd>     | retrieves user info see [response details](#get-auth-detail)
 | <kbd>POST /authenticate</kbd>     | authenticate user into the api see [request details](#post-auth-detail)
@@ -69,6 +69,7 @@ Here you can list the main routes of your API, and what are their expected reque
 <h3 id="get-auth-detail">GET /authenticate</h3>
 
 **RESPONSE**
+
 ```json
 {
   "name": "Fernanda Kipper",
@@ -80,6 +81,7 @@ Here you can list the main routes of your API, and what are their expected reque
 <h3 id="post-auth-detail">POST /authenticate</h3>
 
 **REQUEST**
+
 ```json
 {
   "username": "fernandakipper",
@@ -88,6 +90,7 @@ Here you can list the main routes of your API, and what are their expected reque
 ```
 
 **RESPONSE**
+
 ```json
 {
   "token": "OwoMRHsaQwyAgVoc3OXmL1JhMVUYXGGBbCTK0GBgiYitwQwjf0gVoBmkbuyy0pSi"
@@ -129,12 +132,14 @@ Special thank you for all people that contributed for this project.
 
 <h2 id="contribute">📫 Contribute</h2>
 
-Here you will explain how other developers can contribute to your project. For example, explaining how can create their branches, which patterns to follow and how to open an pull request
+Here you will explain how other developers can contribute to your project. For example, explaining how can create their
+branches, which patterns to follow and how to open an pull request
 
 1. `git clone https://github.com/Fernanda-Kipper/text-editor.git`
 2. `git checkout -b feature/NAME`
 3. Follow commit patterns
-4. Open a Pull Request explaining the problem solved or feature made, if exists, append screenshot of visual modifications and wait for the review!
+4. Open a Pull Request explaining the problem solved or feature made, if exists, append screenshot of visual
+   modifications and wait for the review!
 
 <h3>Documentations that might help</h3>
 
