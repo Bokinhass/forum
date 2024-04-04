@@ -38,4 +38,5 @@ public class TopicoDTO {
   public LocalDateTime getDataCriacao() {
     return dataCriacao;
   }
+  
 }
