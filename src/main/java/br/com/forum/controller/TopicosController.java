@@ -74,6 +74,7 @@ public class TopicosController {
 
   @PutMapping("/{id}")
   @Transactional
+  @CacheEvict(value = "listaDeTopicos", allEntries = true)
   public ResponseEntity<TopicoDTO> atualizar(@PathVariable Long id, @RequestBody @Valid TopicoAtt att) {
     Optional<Topico> optionalTopico = topicoRepository.findById(id);
 
@@ -88,6 +89,7 @@ public class TopicosController {
 
   @DeleteMapping("/{id}")
   @Transactional
+  @CacheEvict(value = "listaDeTopicos", allEntries = true)
   public ResponseEntity<?> apagar(@PathVariable Long id) {
     Optional<Topico> optionalTopico = topicoRepository.findById(id);
 
