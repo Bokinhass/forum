@@ -33,7 +33,6 @@ public class TopicosController {
   @Autowired
   private CursoRepository cursoRepository;
 
-
   @GetMapping
   @Cacheable(value = "listaDeTopicos")
   public Page<TopicoDTO> lista(@RequestParam(required = false) String nomeCurso,
